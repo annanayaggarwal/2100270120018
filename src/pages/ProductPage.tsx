@@ -7,6 +7,8 @@ export default function ProductPage() {
     const [product, setProduct] = useState<any>(null);
 
     useEffect(() => {
+
+        
         if (location.state && location.state.product) {
             setProduct(location.state.product);
         }
